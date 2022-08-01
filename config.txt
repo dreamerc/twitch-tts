@@ -1,0 +1,6 @@
+[twitch]
+channel = #your_nickname_as_channel_name
+nickname = your_nickname
+oauth = oauth:https://twitchapps.com/tmi/
+client_id = https://dev.twitch.tv/console/apps/create
+client_secret = https://dev.twitch.tv/console/apps/create
