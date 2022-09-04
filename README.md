@@ -36,4 +36,7 @@ Start :
 python twitch-tts.py
 ```
 
-Stop : Ctrl + C
+Usage :
+```
+!tts <something> 
+```
