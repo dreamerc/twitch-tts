@@ -4,6 +4,13 @@ Twitch Text-To-Speech Tool
 This tool is add __!tts__ command , and play audio from Python TTS.
 __Use it carefully , it's an early version.__
 
+Development On Ubuntu Linux.
+
+```
+Twitch.py client -!tts [something]-> Coqui.ai TTS Feature -Curl-> ALSA:aplay
+```
+
+## Install Guide
 ---
 1.  Install https://github.com/coqui-ai/TTS and others
 
