@@ -2,12 +2,20 @@
 Twitch Text-To-Speech Tool
 
 This tool is add __!tts__ command , and play audio from Python TTS.
+
+It's Free (twitch-tts under MIT License).
+
+The Goal :
+1. Help that some people don't want to use their real voice.
+2. Accessible feature shouldn't charge.
+3. Making the dataset/model for public domain.
+
 __Use it carefully , it's an early version.__
 
 Development On Ubuntu Linux.
 
 ```
-Twitch.py client -!tts [something]-> Coqui.ai TTS Feature -Curl-> ALSA:aplay
+Twitch.py client - !tts [something] -> Coqui.ai TTS Feature - Curl -> ALSA:aplay
 ```
 
 ## Install Guide
@@ -43,7 +51,10 @@ Start :
 python twitch-tts.py
 ```
 
-Usage :
+Usage : 
+
+use it in chatroom
+
 ```
 !tts <something> 
 ```
