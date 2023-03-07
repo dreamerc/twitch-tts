@@ -14,11 +14,25 @@ __Use it carefully , it's an early version.__
 
 Development On Ubuntu Linux.
 
+A. Classical (support CUDA)
+
 ```
 Twitch.py client - !tts [something] -> Coqui.ai TTS Feature - Curl -> ALSA:aplay
 ```
 
-## Install Guide
+B. New (CPU)
+
+```
+Browser (twitch-js) <-> Docker with TTS
+```
+
+## Quick Start (B)
+
+```sh
+docker run -it --rm -p 5003:8000 -p 5002:5002 dreamerwolf/twitch-tts-server:latest /root/twitch-tts/run-cpu.sh
+```
+
+## Install Guide (A)
 ---
 1.  Install https://github.com/coqui-ai/TTS and others
 
@@ -30,14 +44,14 @@ pip install -r requirements.txt
 
 CPU :
 
-```bash
-run-cpu.sh
+```sh
+./run-cpu.sh
 ```
 
 nVidia CUDA :
 
-```bash
-run-cuda.sh
+```sh
+./run-cuda.sh
 ```
 
 3. Edit config.txt and Start the twitch chat bot. 

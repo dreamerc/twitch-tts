@@ -1,4 +1,3 @@
-import "./styles.css";
 
 // Provide your token, username and channel. You can generate a token here:
 // https://twitchtokengenerator.com
@@ -11,7 +10,7 @@ const { Chat } = window.TwitchJs;
 const app = document.getElementById("app");
 
 app.innerHTML = `
-<h1>Twitch JS Browser Example</h1>
+<h1>Twitch JS Browser Client</h1>
 `;
 
 function playSound(url) {
