@@ -29,7 +29,7 @@ Browser (twitch-js) <-> Docker with TTS
 ## Quick Start (B)
 
 ```sh
-TWITCHCHANNEL=dreamerc docker run -it --rm -p 5003:8000 -p 5002:5002 -e TWITCHCHANNEL=$TWITCHCHANNEL dreamerwolf/twitch-tts-server:latest /root/twitch-tts/run-cpu-docker.sh
+docker run -it --rm -p 5003:8000 -p 5002:5002 -e TWITCHCHANNEL=<ChannelName> dreamerwolf/twitch-tts-server:latest /root/twitch-tts/run-cpu-docker.sh
 ```
 
 - Open [http://localhost:5003](http://localhost:5003)
