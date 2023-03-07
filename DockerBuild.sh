@@ -1,1 +1,1 @@
-docker build . --no-cache --tag twitch-tts-server
+docker build . --no-cache --tag dreamerwolf/twitch-tts-server:latest
