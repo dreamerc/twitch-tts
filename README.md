@@ -1,7 +1,7 @@
 # twitch-tts
 Twitch Text-To-Speech Tool
 
-This tool is add __!tts__ command , and play audio from Python TTS.
+This tool is added __!tts__ command, and play audio from Python TTS.
 
 It's Free (twitch-tts under MIT License).
 
@@ -10,7 +10,7 @@ The Goal :
 2. Accessible feature shouldn't charge.
 3. Making the datasets/models for public domain.
 
-__Use it carefully , it's an early version.__
+__Use it carefully, it's an early version.__
 
 Development On Ubuntu Linux.
 
@@ -20,7 +20,7 @@ A. Classical (support CUDA)
 Twitch.py client - !tts [something] -> Coqui.ai TTS Feature - Curl -> ALSA:aplay
 ```
 
-B. New (CPU)
+B. New (CPU only)
 
 ```
 Browser (twitch-js) <-> Docker with TTS
@@ -29,8 +29,13 @@ Browser (twitch-js) <-> Docker with TTS
 ## Quick Start (B)
 
 ```sh
-docker run -it --rm -p 5003:8000 -p 5002:5002 dreamerwolf/twitch-tts-server:latest /root/twitch-tts/run-cpu.sh
+docker run -it --rm -p 5003:8000 -p 5002:5002 dreamerwolf/twitch-tts-server:latest /root/twitch-tts/run-cpu-docker.sh
 ```
+
+- Open [http://localhost:5003](http://localhost:5003)
+  - Allow auto play media
+  - Allow JavaScript
+- Wait the Model Download
 
 ## Install Guide (A)
 ---
