@@ -1,6 +1,3 @@
-
-// Provide your token, username and channel. You can generate a token here:
-// https://twitchtokengenerator.com
 const username = undefined;
 const token = undefined;
 const channel = "dreamerc";

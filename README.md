@@ -39,6 +39,16 @@ docker run -it --rm -p 5003:8000 -p 5002:5002 -e TWITCHCHANNEL=<ChannelName> dre
 
 ## Install Guide (A)
 ---
+0. Python Venv and Git
+
+```sh
+sudo apt install python3-venv git
+mkdir -p ~/python3-venv-root/twitch-tts-venv
+python3 -m venv ~/python3-venv-root/twitch-tts-venv
+cd ~/python3-venv-root/twitch-tts-venv
+git clone https://github.com/dreamerc/twitch-tts
+```
+
 1.  Install https://github.com/coqui-ai/TTS and others
 
 ```bash
@@ -59,8 +69,8 @@ nVidia CUDA :
 ./run-cuda.sh
 ```
 
-3. Edit config.txt and Start the twitch chat bot. 
-  - Channel & nickname : your twitch account name in URL, but channel name start with # .
+3. Edit config.txt and Start the twitch chatbot. 
+  - Channel & nickname : your twitch account name in URL, but channel name start with # 
   - OAuth : https://twitchapps.com/tmi/
   - client_id & client_secret : https://dev.twitch.tv/console/apps/create
 
@@ -70,6 +80,8 @@ Start :
 python twitch-tts.py
 ```
 
+## How to Use?
+
 Usage : 
 
 use it in chatroom
@@ -77,3 +89,10 @@ use it in chatroom
 ```
 !tts <something> 
 ```
+
+## FAQ
+
+- Q: If you don't want to use browser as a client, you still can use python client.
+   A: Use [Python venv feature](https://docs.python.org/3/library/venv.html) to install. 
+- Q: Where is autoplay and JavaScript setting?
+   A: https://blog.mozilla.org/en/uncategorized/block-autoplay/ (But set allow for Firefox), Chrome is default enabled.
