@@ -93,6 +93,9 @@ use it in chatroom
 ## FAQ
 
 - Q: If you don't want to use browser as a client, you still can use python client.
-   A: Use [Python venv feature](https://docs.python.org/3/library/venv.html) to install. 
+
+  A: Use [Python venv feature](https://docs.python.org/3/library/venv.html) to install.
+
 - Q: Where is autoplay and JavaScript setting?
-   A: https://blog.mozilla.org/en/uncategorized/block-autoplay/ (But set allow for Firefox), Chrome is default enabled.
+
+  A: https://blog.mozilla.org/en/uncategorized/block-autoplay/ (But set allow for Firefox), Chrome is default enabled.
