@@ -11,6 +11,7 @@ The Goal :
 3. Making the datasets/models for public domain.
 
 __Use it carefully, it's an early version.__
+__Upstream, Coqui.ai is under unknown status.__
 
 Development On Ubuntu Linux.
 
@@ -23,7 +24,7 @@ Twitch.py client - !tts [something] -> Coqui.ai TTS Feature - Curl -> ALSA:aplay
 B. New (CPU only)
 
 ```
-Browser (twitch-js) <-> Docker with TTS
+Browser (twitch-js) <-> Docker with Coqui.ai TTS
 ```
 
 ## Quick Start (B)
@@ -46,6 +47,7 @@ sudo apt install python3-venv git
 mkdir -p ~/python3-venv-root/twitch-tts-venv
 python3 -m venv ~/python3-venv-root/twitch-tts-venv
 cd ~/python3-venv-root/twitch-tts-venv
+source ~/python3-venv-root/twitch-tts-venv
 git clone https://github.com/dreamerc/twitch-tts
 ```
 
